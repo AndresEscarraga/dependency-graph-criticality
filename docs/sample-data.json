@@ -1,0 +1,38 @@
+{
+  "issues": [
+    {
+      "id": "ISSUE:ALPHA-1",
+      "key": "ALPHA-1",
+      "title": "Provision database",
+      "status": "In Progress",
+      "assignee": "Riley",
+      "startDate": "2024-05-01",
+      "dueDate": "2024-05-05",
+      "estimateMinutes": 1440
+    },
+    {
+      "id": "ISSUE:ALPHA-2",
+      "key": "ALPHA-2",
+      "title": "Implement API",
+      "status": "Todo",
+      "assignee": "Devon",
+      "startDate": "2024-05-06",
+      "dueDate": "2024-05-12",
+      "estimateMinutes": 2880
+    },
+    {
+      "id": "ISSUE:ALPHA-3",
+      "key": "ALPHA-3",
+      "title": "QA & Launch",
+      "status": "Todo",
+      "assignee": "Jordan",
+      "startDate": "2024-05-13",
+      "dueDate": "2024-05-16",
+      "estimateMinutes": 1440
+    }
+  ],
+  "dependencies": [
+    { "from": "ISSUE:ALPHA-1", "to": "ISSUE:ALPHA-2", "type": "blocks" },
+    { "from": "ISSUE:ALPHA-2", "to": "ISSUE:ALPHA-3", "type": "blocks" }
+  ]
+}
