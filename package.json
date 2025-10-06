@@ -1,0 +1,29 @@
+{
+  "name": "dependency-graph-criticality",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Dependency graph criticality analysis platform",
+  "license": "MIT",
+  "scripts": {
+    "build": "pnpm -r build",
+    "dev:web": "pnpm --filter @depgraph/web dev",
+    "dev:api": "pnpm --filter @depgraph/api start:dev",
+    "lint": "pnpm -r lint",
+    "test": "pnpm -r test",
+    "typecheck": "pnpm -r typecheck",
+    "graph:demo": "pnpm --filter @depgraph/graph-engine demo"
+  },
+  "keywords": [
+    "critical path",
+    "jira",
+    "dependency graph"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "pnpm@8.15.1",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
+}
